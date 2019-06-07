@@ -39,15 +39,9 @@
 // You can either write the complete code there or
 // Split the styling to modules and import them seperately.
 
+@import "site";
+
 html, body {
     width: 100%;
     height: 100%;
 }
-
-.footer {
-    background: darken($muted, 10%)
-}
-
-.vh-100 {
-    height: 100vh;
-} // <- You can remove this if you need

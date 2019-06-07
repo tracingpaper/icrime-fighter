@@ -1,0 +1,35 @@
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+        <a href="{{app.url}}" class="uk-navbar-item nav-logo">
+            <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
+        </a>
+    </div>
+
+    <div class="uk-navbar-right" >
+
+        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#benefits">Benefits</a>
+            </li>
+            <li>
+                <a href="#howitworks">How It Works</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Us</a>
+            </li>
+        </ul>
+
+        <div class="uk-navbar-item uk-margin-large-left">
+            <button href="#contact" class="uk-button uk-button-outline uk-button-primary">
+                Log In
+            </button>
+        </div>
+
+    </div>
+</nav>

@@ -16,3 +16,50 @@
     
 }
 */
+
+$modifications: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    warning: $warning,
+    muted: $muted,
+    danger: $danger,
+    default: $dark,
+);
+
+@mixin hook-button () {
+    font-size: 14px;
+    font-weight: 400;
+    // height: 50px;
+    padding: 5px 30px;
+
+    &.uk-button-outline {
+
+        background: transparent !important;
+        border: 2px solid $dark;
+        color: $global-emphasis-color;
+
+        &:hover {
+            color: $light;
+        }
+
+        @each $key,$color in $modifications  {
+            &.uk-button-#{$key} {
+                border-color: $color;
+                color: $color;
+
+                &:hover {
+                    color: $color;
+                    background: transparentize($color, 0.8) !important;
+                }
+            }
+        }
+    }
+}
+
+@mixin hook-navbar-nav-item() {
+    color: $light;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0 0.75rem;
+}

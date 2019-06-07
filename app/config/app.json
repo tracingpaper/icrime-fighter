@@ -1,9 +1,9 @@
 {
-    "title": "Mosaic",
-    "description": "A static sitebuilder framework built from gulp, nunjucks, browserify, sass and UIKit",
-    "keywords": "tracing paper, jigsaw,design,logo,print,graphic,web design,web development",
+    "title": "iCrime Fighter Enterprise",
+    "description": "Secure Evidence Collection Made Easy",
+    "keywords": "evidence, crime",
     "url": "localhost:4000",
-    "logo": "/assets/images/logo.svg",
+    "logo": "/assets/images/logo.png",
     "icon": "/assets/icons/icon@192.png",
-    "author": "Tracing Paper"
+    "author": "iCrime Fighter Enterprise"
 }

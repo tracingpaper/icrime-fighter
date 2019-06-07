@@ -1,0 +1,28 @@
+<!--
+    Section: Hero
+    Images: assets/images/hero
+    Logo: assets/images/logo.png
+-->
+<div id="hero" class="uk-section uk-padding-remove uk-background-cover" data-src="assets/images/hero/background.png" uk-height-viewport uk-img>
+    <div class="uk-overlay uk-overlay-primary uk-position-cover uk-padding-remove">
+        
+        <div class="uk-container">
+            {% include "partials/navbar.partial.njk" %}
+
+            <div class="uk-flex uk-flex-column uk-text-center" uk-height-viewport="offset-top: true">
+                <div class="uk-margin-auto-vertical uk-light">
+                    <h1 class="uk-heading-medium hero-heading">Secure Evidence Collection Made Easy</h1>
+                    <h2 class="uk-heading text-light uk-margin-remove-top">Simplify your evidence gathering with one device</h2>
+                </div>
+                <div class="uk-dark uk-margin-auto-bottom">
+                    <div class="uk-text-lead text-light uk-light uk-margin-small-bottom">Be part of the innovation!</div>
+                    <a href="#" class="uk-button uk-button-primary uk-text-secondary">Get Started</a>
+                </div>
+            </div>
+            
+        </div>
+
+        {% include "sections/features.section.njk" %}
+
+    </div>
+</div>
