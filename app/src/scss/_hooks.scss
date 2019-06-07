@@ -39,10 +39,6 @@ $modifications: (
         border: 2px solid $dark;
         color: $global-emphasis-color;
 
-        &:hover {
-            color: $light;
-        }
-
         @each $key,$color in $modifications  {
             &.uk-button-#{$key} {
                 border-color: $color;

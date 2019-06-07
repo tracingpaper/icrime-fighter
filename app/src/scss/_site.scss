@@ -10,11 +10,11 @@
 
 #features {
 
+    transform: translateY(-25%);
+
     @media screen and (min-width: $breakpoint-medium) {
         transform: translateY(-50%);
     }
-
-    transform: translateY(-25%);
     
     .uk-card {
 
@@ -23,5 +23,27 @@
         .feature-title {
             font-size: 1.45rem;
         }
+    }
+}
+
+#about {
+
+    margin-top: 340px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        margin-top: 150px;
+    }
+
+    #about-video-play-btn {
+        font-size: 1.5rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50rem;
+        border-width: 3px;
+        padding: 0;
+        margin: 0;
     }
 }
