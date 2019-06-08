@@ -43,6 +43,13 @@ $global-font-size: 15px;
 // overlay
 $overlay-primary-background: rgba(#000, 0.53);
 $overlay-primary-color-mode: dark;
+
+// heading
+$heading-medium-font-size-l:                     3rem !default;                                   // 36px
+$heading-large-font-size-l:                      3.2rem !default;                                   // 48px
+$heading-xlarge-font-size-l:                     4.8rem !default;                                   // 72px
+$heading-2xlarge-font-size-l:                    8.5rem !default;                                  // 128px
+
 // => Add your own theming variables below //
 
 // (x) Donot write custom styling here //
