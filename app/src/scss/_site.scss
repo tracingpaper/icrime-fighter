@@ -14,6 +14,11 @@
     font-weight: 300;
 }
 
+.padding-extra-vertical {
+    padding-top: $global-large-gutter;
+    padding-bottom: $global-large-gutter;
+}
+
 #features {
 
     transform: translateY(-25%);
@@ -56,7 +61,19 @@
     }
 }
 
-.padding-extra-vertical {
-    padding-top: $global-large-gutter;
-    padding-bottom: $global-large-gutter;
+#benefits {
+
+    .benefit-card {
+        color: #bdc3dc;
+
+        .uk-card-title {
+            font-size: 2.13rem;
+            font-weight: 600;
+            color: #bdc3dc;
+        }
+
+        ul.uk-list li {
+            color: #B9C5D5;
+        }
+    }
 }

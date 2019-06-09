@@ -53,9 +53,20 @@ $modifications: (
     }
 }
 
+// navbar
 @mixin hook-navbar-nav-item() {
     color: $light;
     text-transform: capitalize;
     font-size: 14px;
     margin: 0 0.75rem;
+}
+
+// list bullet
+@mixin hook-list-bullet() {
+
+    content: '\f101';
+    font-family: $icon-font-family;
+    font-weight: 900;
+    color: #232C35;
+    background: none !important;
 }
