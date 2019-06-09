@@ -64,16 +64,203 @@
 #benefits {
 
     .benefit-card {
-        color: #bdc3dc;
+        color: $benefit-card-text-color;
 
         .uk-card-title {
             font-size: 2.13rem;
             font-weight: 600;
-            color: #bdc3dc;
+            color: $benefit-card-title-color;
         }
 
         ul.uk-list li {
-            color: #B9C5D5;
+            color: $benefit-card-list-item-color;
         }
+    }
+}
+
+// ==============
+//  HOW IT WORKS
+// ==============
+
+#hiw-container {
+    width: 100%;
+    position: relative;
+    height: 600px;
+
+    #hiw-cloud, #hiw-mobile, #hiw-portal, #hiw-department {
+        position: absolute;
+        z-index: 12;
+
+        .image {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+        }
+    }
+
+    #hiw-mobile, #hiw-portal, #hiw-department {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        right: 0%;
+
+        .content {
+            text-align: left;
+            width: 170px;
+            margin-left: 1rem;
+
+            .uk-heading {
+                font-weight: 400;
+            }
+    
+            .text {
+                display: none;
+            }
+        }
+
+    }
+
+    #hiw-cloud {
+        width: 80px;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%)
+    }
+
+    #hiw-mobile {
+        top: 0%;
+    }
+
+    #hiw-department {
+        bottom: 0%;
+    }
+
+    #hiw-portal {
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
+        display: block;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+
+    #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
+        left: 40px;
+        width: calc(100% - 250px);
+    }
+
+    #hiw-mobile-connect, #hiw-portal-connect {
+        height: calc(50% - 40px);
+        border-left: $hiw-connector-thickness dashed $hiw-connector-color;
+    }
+
+    #hiw-mobile-connect {
+        bottom: 50%;
+        border-top: $hiw-connector-thickness dashed $hiw-connector-color;
+    }
+
+    #hiw-portal-connect {
+        top: 50%;
+        border-bottom: $hiw-connector-thickness dashed $hiw-connector-color;
+    }
+
+    #hiw-department-connect {
+        height: 1px;
+        top: 50%;
+        border-bottom: $hiw-connector-thickness dashed $hiw-connector-color;
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+
+    #hiw-container {
+        height: 500px;
+
+        #hiw-cloud, #hiw-mobile, #hiw-portal, #hiw-department {
+
+            .image {
+                width: 100px;
+            }
+        }
+
+        #hiw-mobile, #hiw-portal, #hiw-department {
+            flex-direction: column;
+            width: 250px;
+            align-items: center;
+
+            .content {
+                margin-top: 1rem;
+                width: 250px;
+                text-align: center;
+                .uk-heading {
+                    font-size: 1.8rem;
+                }
+    
+                .text {
+                    display: initial;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        #hiw-cloud {
+            width: 100px;
+            left: 50%;
+            top: 0%;
+            transform: translateX(-50%)
+        }
+
+        #hiw-mobile {
+            left: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #hiw-department {
+            right: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #hiw-portal {
+            left: 50%;
+            bottom: 0%;
+            transform: translateX(-50%)
+        }
+
+        #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
+            top: 50px;
+            left: initial;
+        }
+
+        #hiw-mobile-connect, #hiw-portal-connect {
+            width: calc(50% - 150px);
+            height: 25%;
+            border-bottom: $hiw-connector-thickness dashed $hiw-connector-color;
+
+        }
+
+        #hiw-mobile-connect {
+            right: calc(50% + 25px);
+            border-right: $hiw-connector-thickness dashed $hiw-connector-color;
+        }
+
+        #hiw-portal-connect {
+            left: calc(50% + 25px);
+            border-left: $hiw-connector-thickness dashed $hiw-connector-color;
+        }
+
+        #hiw-department-connect {
+            left: 50%;
+            width: 1px;
+            height: 50%;
+            border-left: $hiw-connector-thickness dashed $hiw-connector-color;
+        }
+
     }
 }

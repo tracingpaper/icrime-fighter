@@ -50,8 +50,25 @@ $heading-large-font-size-l:     3.2rem !default;
 $heading-xlarge-font-size-l:    4.8rem !default;
 $heading-2xlarge-font-size-l:   8.5rem !default;
 
+// list
+$list-bullet-icon-color: #232C35;
+$list-bullet-icon: '\f101';
+
 // => Add your own theming variables below //
 
 $icon-font-family: 'Font Awesome 5 Free';
+
+// Benefits
+$benefit-card-text-color: #b9c5d5;
+$benefit-card-title-color: $benefit-card-text-color;
+$benefit-card-list-item-color: $benefit-card-text-color;
+
+
+// for bullet icon change $list-bullet-icon (Refer Font Awesome 5 icons for unicode)
+// for bullet color change $list-bullet-icon-color
+
+// how it works
+$hiw-connector-color: #A9D2E9;
+$hiw-connector-thickness: 1.5px;
 
 // (x) Donot write custom styling here //

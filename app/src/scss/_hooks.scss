@@ -64,9 +64,9 @@ $modifications: (
 // list bullet
 @mixin hook-list-bullet() {
 
-    content: '\f101';
+    content: $list-bullet-icon;
     font-family: $icon-font-family;
     font-weight: 900;
-    color: #232C35;
+    color: $list-bullet-icon-color;
     background: none !important;
 }
