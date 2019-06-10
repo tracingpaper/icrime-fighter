@@ -101,7 +101,7 @@
     #hiw-mobile, #hiw-portal, #hiw-department {
         width: 250px;
         display: flex;
-        align-items: center;
+        // align-items: flex-start;
         right: 0%;
 
         .content {
@@ -113,9 +113,9 @@
                 font-weight: 400;
             }
     
-            .text {
-                display: none;
-            }
+            // .text {
+            //     display: none;
+            // }
         }
 
     }
@@ -127,18 +127,7 @@
         transform: translateY(-50%)
     }
 
-    #hiw-mobile {
-        top: 0%;
-    }
-
-    #hiw-department {
-        bottom: 0%;
-    }
-
-    #hiw-portal {
-        top: 50%;
-        transform: translateY(-50%)
-    }
+    
 
     #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
         display: block;
@@ -148,6 +137,22 @@
 }
 
 @media screen and (max-width: $breakpoint-medium) {
+
+    #hiw-mobile {
+        align-items: flex-start;
+        top: 0%;
+    }
+
+    #hiw-department {
+        align-items: flex-end;
+        bottom: 0%;
+    }
+
+    #hiw-portal {
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%)
+    }
 
     #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
         left: 40px;
@@ -176,7 +181,7 @@
     }
 }
 
-@media screen and (min-width: $breakpoint-medium) {
+@media screen and (min-width: $breakpoint-small) {
 
     #hiw-container {
         height: 500px;
@@ -262,5 +267,32 @@
             border-left: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
+    }
+}
+
+
+
+// ==============
+//  CONTACT FORM
+// ==============
+
+#contact {
+
+    position: relative;
+
+    
+    #contact-form-container {
+
+        width: 80%;
+        min-width: 300px;
+        margin: 0 auto;
+        
+        @media screen and (min-width: $breakpoint-medium) {
+
+            position: absolute;
+            width: 25%;
+            bottom: -80px;
+            right: $global-large-gutter*2;
+        }
     }
 }

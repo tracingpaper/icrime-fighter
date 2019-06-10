@@ -37,8 +37,13 @@ $global-color: $gray;
 $global-emphasis-color: $dark;
 $global-inverse-color: $light;
 
-$global-font-family: 'Oxygen', 'Roboto', sans-serif;
+$global-font-family: 'Quattrocento Sans', sans-serif;
 $global-font-size: 15px;
+
+$global-border: #A4A4A4;
+
+// border-radius
+$border-rounded-border-radius: 5px;
 
 // overlay
 $overlay-primary-background: rgba(#000, 0.53);
