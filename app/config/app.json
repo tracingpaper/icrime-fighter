@@ -2,7 +2,7 @@
     "title": "iCrime Fighter Enterprise",
     "description": "Secure Evidence Collection Made Easy",
     "keywords": "mobile evidence, mobile evidence management, evidence management, cloud evidence management, crimefighter, icrimefighter",
-    "url": "localhost:4000",
+    "url": "https://icrimefighter.netlify.com",
     "logo": "/assets/images/logo.png",
     "icon": "/assets/icons/icon.png",
     "author": "iCrime Fighter Enterprise"
