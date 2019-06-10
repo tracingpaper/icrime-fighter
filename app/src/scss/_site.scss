@@ -212,6 +212,8 @@
             align-items: center;
 
             .content {
+                position: absolute;
+                top: 100%;
                 margin-top: 1rem;
                 width: 250px;
                 text-align: center;
@@ -235,19 +237,19 @@
 
         #hiw-mobile {
             left: 0%;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
         }
 
         #hiw-department {
             right: 0%;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
         }
 
         #hiw-portal {
             left: 50%;
-            bottom: 0%;
+            bottom: 30%;
             transform: translateX(-50%)
         }
 
@@ -256,11 +258,10 @@
             left: initial;
         }
 
-        #hiw-mobile-connect, #hiw-portal-connect {
+        #hiw-mobile-connect, #hiw-department-connect {
             width: calc(50% - 150px);
-            height: 25%;
+            height: calc(40% - 50px);
             border-bottom: $hiw-connector-thickness dashed $hiw-connector-color;
-
         }
 
         #hiw-mobile-connect {
@@ -268,12 +269,12 @@
             border-right: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
-        #hiw-portal-connect {
+        #hiw-department-connect {
             left: calc(50% + 25px);
             border-left: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
-        #hiw-department-connect {
+        #hiw-portal-connect {
             left: 50%;
             width: 1px;
             height: 50%;
