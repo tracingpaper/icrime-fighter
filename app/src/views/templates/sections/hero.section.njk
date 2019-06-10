@@ -3,13 +3,13 @@
     Images: assets/images/hero
     Logo: assets/images/logo.png
 -->
-<div id="hero" class="uk-section uk-padding-remove uk-background-cover" data-src="assets/images/hero/background.png" uk-height-viewport uk-img>
+<div id="hero" class="uk-section uk-padding-remove uk-background-cover" data-src="assets/images/hero/background.png" uk-img>
     <div class="uk-overlay uk-overlay-primary uk-position-cover uk-padding-remove">
         
         <div class="uk-container">
             {% include "partials/navbar.partial.njk" %}
 
-            <div class="uk-flex uk-flex-column uk-text-center" uk-height-viewport="offset-top: true">
+            <div id="hero-content" class="uk-flex uk-flex-column uk-text-center" uk-height-viewport="offset-top: true">
                 <div class="uk-margin-auto-vertical">
                     <div class="uk-light">
                         <h1 class="uk-heading-medium hero-heading">Secure Evidence Collection Made Easy</h1> <!-- Hero heading -->

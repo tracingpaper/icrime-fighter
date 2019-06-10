@@ -14,9 +14,19 @@
     font-weight: 300;
 }
 
+.text-xlarge {
+    font-size: 2rem;
+}
+
 .padding-extra-vertical {
     padding-top: $global-large-gutter;
     padding-bottom: $global-large-gutter;
+}
+
+
+#hero {
+    height: 100vh;
+
 }
 
 #features {
@@ -28,7 +38,6 @@
     }
 
     @media screen and (min-width: $breakpoint-medium) {
-        transform: translateY(-50%);
 
         .uk-card {
 
@@ -294,7 +303,7 @@
         @media screen and (min-width: $breakpoint-medium) {
 
             position: absolute;
-            width: 25%;
+            width: 30%;
             bottom: -80px;
             right: $global-large-gutter*2;
         }
