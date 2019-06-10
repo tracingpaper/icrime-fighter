@@ -4,7 +4,16 @@
 
     <div class="uk-flex uk-flex-column vh-100">
 
+        {% include "partials/contact-modal.partial.njk" %}
+
         {% include "sections/hero.section.njk" %}
+
+        <!-- features are positioned as a section in small devices -->
+        <div class="uk-section uk-section-secondary uk-preserve-color uk-hidden@m">
+            <div class="uk-container">
+                {% include "sections/features.section.njk" %}
+            </div>
+        </div>
 
         {% include "sections/first.section.njk" %}
 

@@ -17,14 +17,17 @@
                     </div>
                     <div class="uk-dark uk-margin-large-top">
                         <div class="uk-text-lead text-light uk-light uk-margin-small-bottom">Be part of the innovation!</div> <!-- Pre description of action button -->
-                        <a href="#" class="uk-button uk-button-primary uk-text-secondary">Get Started</a> <!-- Action button -->
+                        <a href="#" class="uk-button uk-button-primary uk-text-secondary btn-get-started">Get Started</a> <!-- Action button -->
                     </div>
                 </div>
             </div>
             
         </div>
 
-        {% include "sections/features.section.njk" %}
+        <!-- features are positioned absolute in large devices -->
+        <div class="uk-visible@m">
+            {% include "sections/features.section.njk" %}
+        </div>
 
     </div>
 </div>

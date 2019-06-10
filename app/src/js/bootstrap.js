@@ -3,11 +3,11 @@ import $ from "jquery";
 window.jQuery = window.$ = $;
 
 //UIKit
-import UIKit from "uikit";
+import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 
-UIKit.use(Icons);
+UIkit.use(Icons);
 
-window.UIKit = UIKit;
+window.UIkit = UIkit;
 
 // Add more bootstrap packages here

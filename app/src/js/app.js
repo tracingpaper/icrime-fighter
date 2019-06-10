@@ -12,3 +12,12 @@ import "./bootstrap";
 */
 
 import "./video-player";
+
+
+// open contact modal
+$(".btn-get-started").click((e) => {
+
+    e.preventDefault();
+
+    UIkit.modal('#contact-form-modal').show();
+})
