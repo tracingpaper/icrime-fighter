@@ -250,19 +250,17 @@
         <div class="uk-grid-large" uk-grid>
 
             <div class="uk-width-1-1 uk-width-1-2@m">
-                <div class="uk-inline">
+                
 
-                    <!-- the video player [change src value] -->
-                    <video id="about-video" src="assets/videos/section-1/about.mp4" uk-video="autoplay: false"></video>
-
-                    <!-- Video Overlay -->
-                    <div id="about-video-overlay" class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
-                        <h5 class="uk-text-bold">Introducing iCrimeFighter</h5> <!-- video overlay title -->
-                        <div class="uk-position-center">
-                            <a href="#" id="about-video-play-btn" class="uk-button uk-button-outline uk-button-muted" uk-icon="play"></a> <!-- video player button -->
-                        </div>
-                    </div>
-                </div>
+                <iframe 
+                    src="https://www.youtube.com/embed/SGxPrQOupMQ" 
+                    frameborder="0" 
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    width="1920" height="1080"
+                    uk-responsive
+                    uk-video="automute: true">
+                </iframe>
             </div>
 
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-column">
