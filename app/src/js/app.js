@@ -11,7 +11,7 @@ import "./bootstrap";
 * Use bootstrap.js to require node packages.
 */
 
-import "./video-player";
+// import "./video-player";
 
 
 // open contact modal
