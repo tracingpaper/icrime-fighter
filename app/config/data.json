@@ -1,7 +1,20 @@
 {
-    "social": {
-        "facebook": "",
-        "instagram": "",
-        "twitter": ""
+    "links": {
+        "login": "#YOUR_LOGIN_URL"
+    },
+    "forms": {
+        "contact": {
+            "action": "#YOUR_CONTACT_FORM_ACTION",
+            "fields": {
+                "name": "name",
+                "email": "email",
+                "phone": "phone",
+                "message": "message"
+            }
+        }
+    },
+    "contacts": {
+        "email": "sales@icrimefighter.com",
+        "phone": "1-800-304-7501"
     }
 }

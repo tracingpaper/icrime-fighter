@@ -26,7 +26,6 @@
 
 #hero {
     height: 100vh;
-
 }
 
 #features {
@@ -34,6 +33,13 @@
     .uk-card {
         .feature-title {
             font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-medium){
+        .uk-card {
+            border-radius: 0;
+            box-shadow: none;
         }
     }
 
@@ -74,6 +80,35 @@
     }
 }
 
+#mobile-app {
+
+    .replace-items {
+
+        .item-icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 0.5rem;
+        }
+
+        .item-text {
+            font-size: 1rem;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+
+            .item-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .item-text {
+                font-size: 1.3rem;
+            }
+            
+        }
+    }
+}
+
 #benefits {
 
     .benefit-card {
@@ -88,6 +123,23 @@
         ul.uk-list li {
             color: $benefit-card-list-item-color;
         }
+    }
+}
+
+// ===============
+// HAMBURGER MENU
+// ===============
+
+#hamburger-menu {
+
+    .uk-modal-close-full {
+        background: transparent;
+        color: $primary;
+    }
+
+    .login-btn {
+        font-size: 2.5rem;
+        padding: 1rem $button-padding-horizontal*2;
     }
 }
 
@@ -107,7 +159,7 @@
         .image {
             position: relative;
             display: inline-block;
-            width: 80px;
+            width: $hiw-icon-width-small;
         }
     }
 
@@ -119,7 +171,7 @@
 
         .content {
             text-align: left;
-            width: 170px;
+            width: calc(250px - #{$hiw-icon-width-small});
             margin-left: 1rem;
 
             .uk-heading {
@@ -134,7 +186,7 @@
     }
 
     #hiw-cloud {
-        width: 80px;
+        width: $hiw-icon-width-small;
         top: 50%;
         left: 0%;
         transform: translateY(-50%)
@@ -149,7 +201,7 @@
     }
 }
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (max-width: $breakpoint-medium) {
 
     #hiw-mobile {
         align-items: flex-start;
@@ -168,12 +220,12 @@
     }
 
     #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
-        left: 40px;
+        left: $hiw-icon-width-small/2;
         width: calc(100% - 250px);
     }
 
     #hiw-mobile-connect, #hiw-portal-connect {
-        height: calc(50% - 40px);
+        height: calc(50% - #{$hiw-icon-width-small/2});
         border-left: $hiw-connector-thickness dashed $hiw-connector-color;
     }
 
@@ -194,7 +246,7 @@
     }
 }
 
-@media screen and (min-width: $breakpoint-small) {
+@media screen and (min-width: $breakpoint-medium) {
 
     #hiw-container {
         height: 500px;
@@ -202,7 +254,7 @@
         #hiw-cloud, #hiw-mobile, #hiw-portal, #hiw-department {
 
             .image {
-                width: 100px;
+                width: $hiw-icon-width;
             }
         }
 
@@ -229,7 +281,7 @@
         }
 
         #hiw-cloud {
-            width: 100px;
+            width: $hiw-icon-width;
             left: 50%;
             top: 0%;
             transform: translateX(-50%)
@@ -254,23 +306,23 @@
         }
 
         #hiw-mobile-connect, #hiw-portal-connect, #hiw-department-connect {
-            top: 50px;
+            top: $hiw-icon-width/2;
             left: initial;
         }
 
         #hiw-mobile-connect, #hiw-department-connect {
-            width: calc(50% - 150px);
-            height: calc(40% - 50px);
+            width: calc(50% - #{$hiw-icon-width*1.5});
+            height: calc(40% - #{$hiw-icon-width/2});
             border-bottom: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
         #hiw-mobile-connect {
-            right: calc(50% + 25px);
+            right: calc(50% + #{$hiw-icon-width/4});
             border-right: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
         #hiw-department-connect {
-            left: calc(50% + 25px);
+            left: calc(50% + #{$hiw-icon-width/4});
             border-left: $hiw-connector-thickness dashed $hiw-connector-color;
         }
 
@@ -294,7 +346,6 @@
 
     position: relative;
 
-    
     #contact-form-container {
 
         width: 80%;

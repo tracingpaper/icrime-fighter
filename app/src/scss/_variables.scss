@@ -22,25 +22,39 @@ $gray   :   #666;
 $light  :   #ffffff;
 
 // OVERRIDES //
-$global-primary-background: $primary;
-$global-secondary-background: $secondary;
+$global-primary-background:     $primary;
+$global-secondary-background:   $secondary;
 
-$global-success-background: $success;
-$global-warning-background: $warning;
-$global-danger-background: $danger;
-$global-muted-background: $muted;
+$global-success-background:     $success;
+$global-warning-background:     $warning;
+$global-danger-background:      $danger;
+$global-muted-background:       $muted;
 
-$global-link-color: $primary;
+$global-link-color:             $primary;
 $base-link-hover-text-decoration: none;
 
-$global-color: $gray;
-$global-emphasis-color: $dark;
-$global-inverse-color: $light;
+$global-color:                  $gray;
+$global-emphasis-color:         $dark;
+$global-inverse-color:          $light;
 
-$global-font-family: 'Quattrocento Sans', sans-serif;
-$global-font-size: 15px;
+$global-font-family:            'Quattrocento Sans', sans-serif;
+$global-font-size:              15px;
 
-$global-border: #A4A4A4;
+$global-border:               #A4A4A4;
+
+// navbar
+$inverse-navbar-nav-item-color:                 $light;
+$inverse-navbar-nav-item-hover-color:           $primary;
+$inverse-navbar-nav-item-onclick-color:         $primary;
+$inverse-navbar-nav-item-active-color:          $light;
+
+// hamburger toggle
+$navbar-toggle-color:                   $primary;
+$navbar-toggle-hover-color:             $light;
+
+// hamburger menu
+$nav-primary-item-font-size:            2.5rem;
+$nav-primary-item-line-height:          2em;
 
 // border-radius
 $border-rounded-border-radius: 5px;
@@ -75,5 +89,8 @@ $benefit-card-list-item-color: $benefit-card-text-color;
 // how it works
 $hiw-connector-color: #A9D2E9;
 $hiw-connector-thickness: 1.5px;
+
+$hiw-icon-width: 100px;
+$hiw-icon-width-small: 60px;
 
 // (x) Donot write custom styling here //

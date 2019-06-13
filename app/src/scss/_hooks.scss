@@ -55,9 +55,7 @@ $modifications: (
 
 // navbar
 @mixin hook-navbar-nav-item() {
-    color: $light;
     text-transform: capitalize;
-    font-size: 14px;
     margin: 0 0.75rem;
 }
 

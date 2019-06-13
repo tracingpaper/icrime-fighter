@@ -2,17 +2,17 @@
 
 {% block content %}
 
-    <div class="uk-flex uk-flex-column vh-100">
+    {% include "partials/contact-modal.partial.njk" %}
 
-        {% include "partials/contact-modal.partial.njk" %}
+    {% include "partials/hamburger-modal.partial.njk" %}
+
+    <div class="uk-flex uk-flex-column vh-100">
 
         {% include "sections/hero.section.njk" %}
 
         <!-- features are positioned as a section in small devices -->
-        <div class="uk-section uk-section-secondary uk-preserve-color uk-hidden@m">
-            <div class="uk-container">
-                {% include "sections/features.section.njk" %}
-            </div>
+        <div class="uk-section uk-padding-remove uk-preserve-color uk-hidden@m" uk-parallax="y:-150px,0; easing:-2">
+            {% include "sections/features.section.njk" %}
         </div>
 
         {% include "sections/first.section.njk" %}

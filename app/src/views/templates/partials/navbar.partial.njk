@@ -7,29 +7,20 @@
 
     <div class="uk-light uk-navbar-right uk-visible@m">
 
+        {% import "macros/nav.macro.njk" as nav %}
         <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
-            <li>
-                <a href="#hero">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#benefits">Benefits</a>
-            </li>
-            <li>
-                <a href="#howitworks">How It Works</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Us</a>
-            </li>
+            {{nav.links()}}
         </ul>
 
         <div class="uk-navbar-item uk-margin-large-left">
-            <button href="#contact" class="uk-button uk-button-outline uk-button-primary">
+            <a href="{{data.links.login}}" class="uk-button uk-button-outline uk-button-primary">
                 Log In
-            </button>
+            </a>
         </div>
 
+    </div>
+
+    <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
     </div>
 </nav>
