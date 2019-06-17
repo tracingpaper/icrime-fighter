@@ -68,3 +68,12 @@ $modifications: (
     color: $list-bullet-icon-color;
     background: none !important;
 }
+
+@mixin hook-nav-primary () {
+
+    li a {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

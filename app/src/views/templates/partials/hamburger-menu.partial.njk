@@ -1,0 +1,40 @@
+{# <div id="hamburger-menu" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog uk-background-secondary uk-flex" uk-height-viewport>
+        <a class="uk-modal-close-full uk-close-large" type="button" uk-close></a>
+
+        <div class="uk-padding uk-light uk-margin-auto-vertical uk-margin-auto">
+            <ul id="hamburger-nav" class="uk-nav uk-nav-primary uk-text-center">
+                {% import "macros/nav.macro.njk" as nav %}
+                {{nav.links()}}
+            </ul>
+
+            <div class="uk-margin-large-top uk-text-center">
+                <a href="{{data.links.login}}" class="uk-button uk-button-outline uk-button-primary login-btn">
+                    Log In
+                </a>
+            </div>
+        </div>
+    </div>
+</div> #}
+
+<div id="hamburger-menu" uk-offcanvas="mode:slide">
+    <div class="uk-offcanvas-bar uk-padding-remove">
+
+        {# <button class="uk-offcanvas-close" type="button" uk-close></button> #}
+
+        <div class="uk-light">
+            <ul id="hamburger-nav" class="uk-nav uk-nav-primary uk-text-center" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
+                {% import "macros/nav.macro.njk" as nav %}
+                {{nav.links()}}
+            </ul>
+
+            <div class="uk-padding uk-text-center">
+                <a href="{{data.links.login}}" class="uk-button uk-button-outline uk-button-primary login-btn">
+                    Log In
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>

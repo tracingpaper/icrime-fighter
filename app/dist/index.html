@@ -69,12 +69,15 @@
     </div>
 </div>
 
-    <div id="hamburger-menu" class="uk-modal-full" uk-modal>
-    <div class="uk-modal-dialog uk-background-secondary uk-flex" uk-height-viewport>
-        <a class="uk-modal-close-full uk-close-large" type="button" uk-close></a>
+    
 
-        <div class="uk-padding uk-light uk-margin-auto-vertical uk-margin-auto">
-            <ul id="hamburger-nav" class="uk-nav uk-nav-primary uk-text-center">
+<div id="hamburger-menu" uk-offcanvas="mode:slide">
+    <div class="uk-offcanvas-bar uk-padding-remove">
+
+        
+
+        <div class="uk-light">
+            <ul id="hamburger-nav" class="uk-nav uk-nav-primary uk-text-center" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
                 
                 
     <li>
@@ -95,13 +98,15 @@
 
             </ul>
 
-            <div class="uk-margin-large-top uk-text-center">
+            <div class="uk-padding uk-text-center">
                 <a href="#YOUR_LOGIN_URL" class="uk-button uk-button-outline uk-button-primary login-btn">
                     Log In
                 </a>
             </div>
         </div>
+
     </div>
+
 </div>
 
     <div class="uk-flex uk-flex-column vh-100">
@@ -180,7 +185,7 @@
     Images: assets/images/features
 -->
 
-<div id="features" class="uk-flex uk-flex-center" uk-parallax="media: @m; y:0, -50%; easing:-2">
+<div id="features" class="uk-flex uk-flex-center" uk-parallax="media: @m; y:-10%, -50%; easing:-2">
     <div class="uk-card uk-card uk-card-default uk-card-body uk-border-rounded">
         <div class="uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
 
@@ -228,13 +233,13 @@
 </div>
 
         <!-- features are positioned as a section in small devices -->
-        <div class="uk-section uk-padding-remove uk-preserve-color uk-hidden@m" uk-parallax="y:-150px,0; easing:-2">
+        <div class="uk-section uk-padding-remove uk-preserve-color uk-hidden@m">
             <!--
     Section: Features
     Images: assets/images/features
 -->
 
-<div id="features" class="uk-flex uk-flex-center" uk-parallax="media: @m; y:0, -50%; easing:-2">
+<div id="features" class="uk-flex uk-flex-center" uk-parallax="media: @m; y:-10%, -50%; easing:-2">
     <div class="uk-card uk-card uk-card-default uk-card-body uk-border-rounded">
         <div class="uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
 

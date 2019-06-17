@@ -4,14 +4,14 @@
 
     {% include "partials/contact-modal.partial.njk" %}
 
-    {% include "partials/hamburger-modal.partial.njk" %}
+    {% include "partials/hamburger-menu.partial.njk" %}
 
     <div class="uk-flex uk-flex-column vh-100">
 
         {% include "sections/hero.section.njk" %}
 
         <!-- features are positioned as a section in small devices -->
-        <div class="uk-section uk-padding-remove uk-preserve-color uk-hidden@m" uk-parallax="y:-150px,0; easing:-2">
+        <div class="uk-section uk-padding-remove uk-preserve-color uk-hidden@m">
             {% include "sections/features.section.njk" %}
         </div>
 
