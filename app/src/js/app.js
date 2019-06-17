@@ -21,3 +21,22 @@ $(".btn-get-started").click((e) => {
 
     UIkit.modal('#contact-form-modal').show();
 })
+
+$(window).on('scroll', (e) => {
+
+    if ($(window).scrollTop() > 500) {
+
+        if ($('#to-top').hasClass('uk-hidden')) {
+
+            $('#to-top').removeClass('uk-hidden').addClass('uk-animation-slide-bottom')
+        }
+    }
+
+    else {
+
+        if (!$('#to-top').hasClass('uk-hidden')) {
+
+            $('#to-top').addClass('uk-hidden')
+        }
+    }
+})
