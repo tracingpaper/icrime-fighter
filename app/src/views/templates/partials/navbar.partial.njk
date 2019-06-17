@@ -1,5 +1,16 @@
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
-    <div class="uk-navbar-left">
+
+    <div class="uk-navbar-left uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
+    </div>
+
+    <div class="uk-navbar-right uk-hidden@m">
+        <a href="{{app.url}}" class="uk-navbar-item nav-logo">
+            <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
+        </a>
+    </div>
+
+    <div class="uk-navbar-left uk-visible@m">
         <a href="{{app.url}}" class="uk-navbar-item nav-logo">
             <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
         </a>
@@ -18,9 +29,5 @@
             </a>
         </div>
 
-    </div>
-
-    <div class="uk-navbar-right uk-hidden@m">
-        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
     </div>
 </nav>
