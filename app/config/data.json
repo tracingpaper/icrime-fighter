@@ -4,12 +4,12 @@
     },
     "forms": {
         "contact": {
-            "action": "#YOUR_CONTACT_FORM_ACTION",
+            "action": "https://9ufzro15b1.execute-api.us-east-1.amazonaws.com/live",
             "fields": {
                 "name": "name",
                 "email": "email",
                 "phone": "phone",
-                "message": "message"
+                "message": "desc"
             }
         }
     },

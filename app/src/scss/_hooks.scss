@@ -77,3 +77,8 @@ $modifications: (
         box-sizing: border-box;
     }
 }
+
+// notification
+@mixin hook-notification-message() {
+    border-radius: $border-rounded-border-radius;
+}

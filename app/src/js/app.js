@@ -13,6 +13,8 @@ import "./bootstrap";
 
 // import "./video-player";
 
+import "./form";
+
 
 // open contact modal
 $(".btn-get-started").click((e) => {
